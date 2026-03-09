@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                       }
 
                       final pokemons = snapshot.data!;
-
+                      
                       // Grid responsivo que exibe os cards
                       return GridView.builder(
                         padding: EdgeInsets.all(12),

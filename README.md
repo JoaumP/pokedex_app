@@ -1,16 +1,39 @@
-# pokedex_app
+# Pokédex App
 
-A new Flutter project.
+Aplicativo de Pokédex desenvolvido em Flutter que consome a [PokéAPI](https://pokeapi.co/) para exibir informações dos Pokémons da primeira geração.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+<div align="center">
+  <img src="screenshots/home.png" width="250" alt="Tela inicial"/>
+  <img src="screenshots/details.png" width="250" alt="Tela de detalhes"/>
+</div>
 
-A few resources to get you started if this is your first Flutter project:
+## Funcionalidades
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Lista de Pokémons em grid com paginação
+- Exibição de 10 Pokémons por página (151 no total)
+- Tela de detalhes com informações de cada Pokémon
+- Navegação entre páginas (anterior/próxima)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologias
+
+- Flutter / Dart
+- [PokéAPI](https://pokeapi.co/)
+- Pacote `http` para requisições
+
+## Estrutura
+
+```
+lib/
+├── main.dart                 # Configuração inicial do app
+├── models/
+│   └── pokemon.dart          # Modelo de dados do Pokémon
+├── pages/
+│   ├── home_page.dart        # Tela principal com lista
+│   └── details_page.dart     # Tela de detalhes
+├── services/
+│   └── poke_api_service.dart # Comunicação com a API
+└── widgets/
+    └── pokemon_card.dart     # Card personalizado
+```
